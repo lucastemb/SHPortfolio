@@ -5,36 +5,16 @@ import 'react-vertical-timeline-component/style.min.css';
 import afrl from './afrl.png';
 import shpe from './shpe.png';
 import ufdatastudio from './ufdatastudio.png'
-
-const WorkIcon = ({image}) => <img className="flex" src={image}/>;
+import Tile from './Tile.js'
 
 function Experience() {
   return (
-    <div className='bg-[#001F5B] flex flex-row'> 
-        <h2 className='text-white font-sans font-semibold text-6xl'> Experience </h2>
-        <VerticalTimeline>
-        <VerticalTimelineElement className="vertical-timeline-element" iconStyle={{background:'#FFF'}} 
-        icon={<WorkIcon image={shpe}/>}>
-            <h1 className="font-bold text-3xl"> Society for Hispanic Professional Engineers </h1>
-            <h2 className=""> SHPEWorks Director </h2> 
-            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris molestie rutrum felis vel facilisis. Maecenas accumsan dapibus nisi ac convallis. Mauris auctor consequat dolor in rhoncus. Donec eget nulla lectus.
-            </p> 
-        </VerticalTimelineElement>
-        <VerticalTimelineElement className="vertical-timeline-element" iconStyle={{background:'#FFF'}} 
-        icon={<WorkIcon className="flex items-center justify-center" image={ufdatastudio}/>}>
-            <h1 className="font-bold text-3xl"> UF Data Studio </h1>
-            <h2 className=""> Undergraduate Student Researcher </h2> 
-            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris molestie rutrum felis vel facilisis. Maecenas accumsan dapibus nisi ac convallis. Mauris auctor consequat dolor in rhoncus. Donec eget nulla lectus.
-            </p> 
-        </VerticalTimelineElement>
-        <VerticalTimelineElement className="vertical-timeline-element" iconStyle={{background:'#72A9BE'}} 
-        icon={<WorkIcon image={afrl}/>}>
-            <h1 className="font-bold text-3xl"> Air Force Research Laboratory </h1>
-            <h2 className=""> MSEIP Undergraduate Researcher </h2> 
-            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris molestie rutrum felis vel facilisis. Maecenas accumsan dapibus nisi ac convallis. Mauris auctor consequat dolor in rhoncus. Donec eget nulla lectus.
-            </p> 
-        </VerticalTimelineElement>
-        </VerticalTimeline>
+    <div className='bg-[#FD652F]/90 flex flex-col h-screen'> 
+        <h2 className=' font-sans font-semibold text-6xl text-[#001F5B] ml-6 mt-6'> Experience </h2>
+        <Tile company="Amazon" role="Software Dev Engineer Intern, Alexa" dates="May 2023 - August 2023" img={afrl}/>
+        <Tile company="L3Harris" role="Software Engineer Intern, Space and Airborne Systems" dates="May 2022 - August 2022" img={shpe}/>
+        <Tile company="ICAI Comillas Pontifical University" role="Research Aid" dates="January 2023-April 2023" img={ufdatastudio}/>
+        
     </div>
   );
 }
