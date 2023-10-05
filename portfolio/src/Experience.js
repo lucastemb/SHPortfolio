@@ -6,7 +6,7 @@ import afrl from './afrl.png';
 import shpe from './shpe.png';
 import ufdatastudio from './ufdatastudio.png'
 
-const WorkIcon = ({image}) => <img className="flex w-5" src={image}/>;
+const WorkIcon = ({image}) => <img className="flex" src={image}/>;
 
 function Experience() {
   return (
@@ -20,7 +20,7 @@ function Experience() {
             <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris molestie rutrum felis vel facilisis. Maecenas accumsan dapibus nisi ac convallis. Mauris auctor consequat dolor in rhoncus. Donec eget nulla lectus.
             </p> 
         </VerticalTimelineElement>
-        <VerticalTimelineElement className="vertical-timeline-element" iconStyle={{background:'#0070C0'}} 
+        <VerticalTimelineElement className="vertical-timeline-element" iconStyle={{background:'#FFF'}} 
         icon={<WorkIcon className="flex items-center justify-center" image={ufdatastudio}/>}>
             <h1 className="font-bold text-3xl"> UF Data Studio </h1>
             <h2 className=""> Undergraduate Student Researcher </h2> 

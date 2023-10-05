@@ -6,29 +6,34 @@ function AboutMe() {
   return (
     <div className="flex flex-col bg-[#72A9BE]/50 h-screen">
     <nav className="flex flex-row justify-between text-[#001F5B]">
-      <div className="m-8 flex flex-col justify-center">
-      <h2 className="font-sans text-xl font-bold"> Lucas Tembras </h2> 
+      <div className="ml-8 mr-8 mb-8 mt-3 flex flex-col justify-center">
+      <h2 className="font-sans text-3xl font-bold"> Lucas Tembras </h2> 
       </div>
-      <div className='m-8 text-lg font-semibold'>
-      <a className="font-sans m-10">About Me</a>
-      <a className="font-sans m-10">Experience</a>
-      <a className="font-sans m-10">Projects</a>
-      <a className="font-sans m-10">Contact</a>
+      <div className='ml-8 mr-8 mb-8 mt-3 text-md font-semibold'>
+      <a className="font-sans m-6">About Me</a>
+      <a className="font-sans m-6">Experience</a>
+      <a className="font-sans m-6">Projects</a>
+      <a className="font-sans m-6">Contact</a>
+      <a className="font-sans m-6">Contact</a>
+      <button className="font-sans m-6 text-[#FFF] bg-[#001F5B] rounded-lg w-40 h-8"> Download Resume </button> 
+  
       </div>
     </nav>
     {/* Info Section */}
     <div className="flex flex-row justify-center h-full items-center">
     <div className="flex flex-col text-white font-sans font-semibold w-[35%] mr-5"> 
     <h2 className="text-7xl text-[#001F5B]"> About Me </h2>
-    <p className="font-normal text-[#001F5B]"> Hi, I'm Lucas Tembras. A 3rd-year undergraduate at the University of Florida studying Computer Science looking for Software Engineering roles. </p>
-    <div className="flex flex-row">
-    <a className="fill-[#001F5B]" href="https://www.linkedin.com/in/lucastembras/"><svg className="mt-2 mr-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></a>
-    <a className="fill-[#001F5B]" href="https://github.com/lucastemb"> <svg className="mt-2 mr-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-4.466 19.59c-.405.078-.534-.171-.534-.384v-2.195c0-.747-.262-1.233-.55-1.481 1.782-.198 3.654-.875 3.654-3.947 0-.874-.312-1.588-.823-2.147.082-.202.356-1.016-.079-2.117 0 0-.671-.215-2.198.82-.64-.18-1.324-.267-2.004-.271-.68.003-1.364.091-2.003.269-1.528-1.035-2.2-.82-2.2-.82-.434 1.102-.16 1.915-.077 2.118-.512.56-.824 1.273-.824 2.147 0 3.064 1.867 3.751 3.645 3.954-.229.2-.436.552-.508 1.07-.457.204-1.614.557-2.328-.666 0 0-.423-.768-1.227-.825 0 0-.78-.01-.055.487 0 0 .525.246.889 1.17 0 0 .463 1.428 2.688.944v1.489c0 .211-.129.459-.528.385-3.18-1.057-5.472-4.056-5.472-7.59 0-4.419 3.582-8 8-8s8 3.581 8 8c0 3.533-2.289 6.531-5.466 7.59z"/></svg> </a>
+    <p className="font-normal text-[#001F5B]"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ipsum dolor sit amet consectetur adipiscing elit. Vitae justo eget magna fermentum iaculis eu non diam. Vehicula ipsum a arcu cursus vitae congue mauris rhoncus.</p>
+    <div className="mt-8 flex flex-row items-center">
+    <svg width="24" height="24" className="mr-1" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M12 10c-1.104 0-2-.896-2-2s.896-2 2-2 2 .896 2 2-.896 2-2 2m0-5c-1.657 0-3 1.343-3 3s1.343 3 3 3 3-1.343 3-3-1.343-3-3-3m-7 2.602c0-3.517 3.271-6.602 7-6.602s7 3.085 7 6.602c0 3.455-2.563 7.543-7 14.527-4.489-7.073-7-11.072-7-14.527m7-7.602c-4.198 0-8 3.403-8 7.602 0 4.198 3.469 9.21 8 16.398 4.531-7.188 8-12.2 8-16.398 0-4.199-3.801-7.602-8-7.602"/></svg>
+    <p className="font-normal text-sm text-[#001F5B]"> Gainesville, Florida </p>
     </div>
     </div> 
-    <div className="flex justify-self-start overflow-hidden ml-5">
-    <div className="h-56 overflow-hidden rounded-full border-4 border-[#0070C0]/90"> 
-    <img src={photo} className="w-full h-full p-1 rounded-full"></img>
+    <div className="relative ml-5">
+    <div className="h-56 z-10 relative overflow-hidden border-4 border-white top-0 left-0">
+    <img src={photo} className=" w-full h-full"></img>
+    </div>
+    <div className="h-56 z-0 absolute overflow-hidden border-4 border-white top-6 left-4 -right-5 inset-x-0 bg-[#D33A02]">
     </div>
     </div>
     </div>
