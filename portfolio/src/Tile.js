@@ -4,7 +4,7 @@ import './App.css';
 
 function Tile(props) {
   return (
-    <div className="bg-white h-56 ml-6 mr-6 rounded-lg mt-4 mb-4">
+    <div className="bg-white h-72 rounded-lg mt-4 mb-4">
         <div className="flex flex-row justify-between h-full">
         <span className=""> 
         <img className="h-full"src={props.img}></img>

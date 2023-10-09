@@ -1,0 +1,23 @@
+[
+        {
+            "id":1,
+            "company":"Amazon",
+            "role":"Software Dev Engineer Intern, Alexa",
+            "dates":"May 2023 - August 2023",
+            "img":"src/amazon.png"
+        },
+        {
+            "id":2,
+            "company":"L3Harris",
+            "role":"Software Engineer Intern, Space and Airborne Systems",
+            "dates":"May 2022 - August 2022",
+            "img":"src/l3.png"
+        },
+        {
+            "id":3,
+            "company":"ICAI Comillas Pontifical University",
+            "role":"Research Aid",
+            "dates":"January 2023-April 2023",
+            "img":"src/comillas.png"
+        }
+    ]

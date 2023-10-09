@@ -6,15 +6,22 @@ import afrl from './amazon.png';
 import shpe from './l3.png';
 import ufdatastudio from './comillas.png'
 import Tile from './Tile.js'
+import experiences from './experiences.json'
+import { useEffect, useState } from 'react';
+
 
 function Experience() {
   return (
     <div className='bg-[#FD652F]/90 flex flex-col pb-4'> 
-        <h2 className=' font-sans font-semibold text-6xl text-[#001F5B] ml-6 mt-8'> Experience </h2>
-        <Tile company="Amazon" role="Software Dev Engineer Intern, Alexa" dates="May 2023 - August 2023" img={afrl}></Tile>
-        <Tile company="L3Harris" role="Software Engineer Intern, Space and Airborne Systems" dates="May 2022 - August 2022" img={shpe}/>
-        <Tile company="ICAI Comillas Pontifical University" role="Research Aid" dates="January 2023-April 2023" img={ufdatastudio}/>
-        
+    <div className="flex flex-col justify-center ml-32 mr-32">
+        <h2 className=' font-sans font-semibold text-7xl text-[#001F5B] ml-6 mt-8'> Experience </h2>
+        {
+          experiences.map(experience=>{
+            return(<Tile company={experience.company} role={experience.role} dates={experiences.dates} img={experiences.img} />)
+          })
+        }
+  
+      </div>    
     </div>
   );
 }
