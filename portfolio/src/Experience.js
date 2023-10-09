@@ -2,9 +2,6 @@ import logo from './logo.svg';
 import './App.css';
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
-import afrl from './amazon.png';
-import shpe from './l3.png';
-import ufdatastudio from './comillas.png'
 import Tile from './Tile.js'
 import experiences from './experiences.json'
 import { useEffect, useState } from 'react';
@@ -17,7 +14,7 @@ function Experience() {
         <h2 className=' font-sans font-semibold text-7xl text-[#001F5B] ml-6 mt-8'> Experience </h2>
         {
           experiences.map(experience=>{
-            return(<Tile company={experience.company} role={experience.role} dates={experiences.dates} img={experiences.img} />)
+            return(<Tile key={experience.id} company={experience.company} role={experience.role} dates={experience.dates} img={experience.img} desc={experience.desc}/>)
           })
         }
   

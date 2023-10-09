@@ -14,7 +14,6 @@ function AboutMe() {
       <a className="font-sans m-6">Experience</a>
       <a className="font-sans m-6">Projects</a>
       <a className="font-sans m-6">Contact</a>
-      <a className="font-sans m-6">Contact</a>
       <button className="font-sans m-6 text-[#FFF] bg-[#001F5B] rounded-lg w-40 h-8"> Download Resume </button> 
   
       </div>

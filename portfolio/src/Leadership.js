@@ -2,7 +2,6 @@ import logo from './logo.svg';
 import './App.css';
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
-import afrl from './amazon.png';
 import shp from './shpe.png';
 import girls from './girls.png';
 import ace from './ace.jpg';
