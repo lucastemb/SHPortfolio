@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import photo from './ballincat.jpeg'
+import { Link } from 'react-scroll';
 
 function AboutMe() {
   return (
@@ -10,11 +11,12 @@ function AboutMe() {
       <h2 className="font-sans text-3xl font-bold"> Lucas Tembras </h2> 
       </div>
       <div className='ml-8 mr-8 mb-8 mt-3 text-md font-semibold'>
-      <a className="font-sans m-6">About Me</a>
-      <a className="font-sans m-6">Experience</a>
-      <a className="font-sans m-6">Projects</a>
-      <a className="font-sans m-6">Contact</a>
-      <button className="font-sans m-6 text-[#FFF] bg-[#001F5B] rounded-lg w-40 h-8"> Download Resume </button> 
+      <Link><a className="font-sans m-6">About Me</a></Link>
+      <Link to="experience" smooth="true"><a className="font-sans m-6">Experience</a></Link>
+      <Link to="leadership" smooth="true"><a className="font-sans m-6">Leadership</a></Link>
+      <Link to="projects" smooth="true"><a className="font-sans m-6">Projects</a></Link>
+      <Link to="contact" smooth="true"><a className="font-sans m-6">Contact</a></Link>
+      <button className="font-sans m-6 text-[#FFF] bg-[#001F5B] rounded-lg w-40 h-8">  Download Resume </button>
   
       </div>
     </nav>

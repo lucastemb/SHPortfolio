@@ -5,6 +5,8 @@ import AboutMe from './AboutMe';
 import Experience from './Experience'
 import reportWebVitals from './reportWebVitals';
 import Leadership from './Leadership';
+import Projects from './Projects';
+import Contact from './Contact'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -12,6 +14,8 @@ root.render(
     <AboutMe />
     <Experience/>
     <Leadership/>
+    <Projects/>
+    <Contact/>
   </React.StrictMode>
 );
 

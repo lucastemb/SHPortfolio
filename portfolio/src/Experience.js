@@ -9,7 +9,7 @@ import { useEffect, useState } from 'react';
 
 function Experience() {
   return (
-    <div className='bg-[#FD652F]/90 flex flex-col pb-4'> 
+    <div className='bg-[#FD652F]/90 flex flex-col pb-4' id="experience"> 
     <div className="flex flex-col justify-center ml-32 mr-32">
         <h2 className=' font-sans font-semibold text-7xl text-[#001F5B] ml-6 mt-8'> Experience </h2>
         {
