@@ -1,14 +1,20 @@
 [
   {
     "id": 1,
-    "title": "RPG",
+    "title": "One",
     "desc": [],
-    "img": "assets/projects/rpg.png"
+    "img": "assets/projects/code.jpeg"
   },
   {
     "id": 2,
-    "title": "CLI",
+    "title": "Two",
     "desc": [],
-    "img": "assets/projects/mycli.png"
+    "img": "assets/projects/code-2.jpeg"
+  },
+  {
+    "id": 2,
+    "title": "Three",
+    "desc": [],
+    "img": "assets/projects/code-3.jpeg"
   }
 ]
