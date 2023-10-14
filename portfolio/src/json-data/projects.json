@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "title": "RPG",
+    "desc": [],
+    "img": "assets/projects/rpg.png"
+  },
+  {
+    "id": 2,
+    "title": "CLI",
+    "desc": [],
+    "img": "assets/projects/mycli.png"
+  }
+]
