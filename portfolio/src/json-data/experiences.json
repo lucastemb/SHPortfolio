@@ -1,0 +1,36 @@
+[
+  {
+    "id": 1,
+    "company": "Amazon",
+    "role": "Software Dev Engineer Intern, Alexa",
+    "dates": "May 2023 - August 2023",
+    "desc": [
+      "Worked with AWS technologies including DynamoDB database, S3 storage bucket, and Alexa 1P Skill",
+      "Successfully integrated LLM through API calls for voice-based interactions and speech utterances",
+      "Employed sophisticated pre-processing techniques prompt-engineering, and feature extraction methods, which led to a 37% reduction in response time"
+    ],
+    "img": "assets/experiences/amazon.png"
+  },
+  {
+    "id": 2,
+    "company": "L3Harris",
+    "role": "Software Engineer Intern, Space and Airborne Systems",
+    "desc": [
+      "Upgraded message validation tool using Python for use with RabbitMQ message broker to validate the contents of 100+ messages per minute and detect any anomalies",
+      "Automated HTML documentation generation from JSON Schema files using Python and Bash scripts, and updated them on a local webpage I designed to enhance employee productivity"
+    ],
+    "dates": "May 2022 - August 2022",
+    "img": "assets/experiences/l3.png"
+  },
+  {
+    "id": 3,
+    "company": "ICAI Comillas Pontifical University",
+    "role": "Research Aid",
+    "desc": [
+      "Optimized the use of transfer learning and neural networks for a real-time object detection machine",
+      "Created Python scripts using the YOLOv5 object detection models that learned to identify Lego pieces in real-time based on their characteristics of color, shape, and size in Google Colab with above 85% accuracy."
+    ],
+    "dates": "January 2023-April 2023",
+    "img": "assets/experiences/comillas.png"
+  }
+]

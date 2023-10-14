@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "company": "SHPE @ UF",
+    "role": "Lead UI/UX Director",
+    "dates": "2023-Current",
+    "desc": [
+      "Develop and communicate the club's design vision and strategy, aligning it with the organization's goals and objectives ",
+      "Collaborate with cross-functional teams, including developers, product managers, and marketing, to drive design excellence throughout the product development lifecycle",
+      "Expertise in Figma as the primary design design tool, using to create wireframes, mockups, prototypes, and design systems."
+    ],
+    "img": "assets/experiences/shpe.png"
+  },
+  {
+    "id": 2,
+    "company": "Girls Who Code @ UF",
+    "role": "Treasurer, Girls Who Code at UF",
+    "desc": [
+      "Managed finances to enhance member participation and facilitate the provision of merchandise and technology equipment",
+      "Collaborated with sponsors to create packages with info sessions, speaking slots, Q&A sessions, and workshops for the club"
+    ],
+    "dates": "2022-2023",
+    "img": "assets/experiences/girls.png"
+  },
+  {
+    "id": 3,
+    "company": "Association of Computer Engineers @ UF",
+    "role": "Web Developer",
+    "desc": [
+      "Part of a software engineering team which develops the website for ACE",
+      "Working in JavaScript, HTML, and CSS; managing weekly tasks to improve website and delegating scrum meetings"
+    ],
+    "dates": "2022-2023",
+    "img": "assets/experiences/ace.jpg"
+  },
+  {
+    "id": 4,
+    "company": "SHPE @ UF",
+    "role": "SHPEInnovative Director",
+    "desc": [
+      "Led a team which planned and organized SHPE x UF Hackathon",
+      "Managed judges, sponsors, prizes, and inclusivity for diverse participants"
+    ],
+    "dates": "2021-2022",
+    "img": "assets/experiences/shpe.png"
+  }
+]
