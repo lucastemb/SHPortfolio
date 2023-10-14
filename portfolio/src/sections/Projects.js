@@ -6,7 +6,7 @@ import projects from '../json-data/projects.json'
 
 function Projects() {
   return (
-    <div className='bg-[#001f5b]/90 flex flex-col pb-4 h-full' id="projects">
+    <div className='bg-projects flex flex-col pb-4 h-full' id="projects">
       <div className="flex flex-col ml-32 mr-32">
         <h2 className=' font-sans font-semibold text-7xl text-white ml-6 mt-6'> Projects </h2>
         <div className="flex flex-col justify-center items-center">

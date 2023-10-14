@@ -4,7 +4,7 @@ import leadership from '../json-data/leadership.json';
 
 function Leadership() {
   return (
-    <div className='bg-[#0070C0] flex flex-col' id="leadership">
+    <div className='bg-leadership flex flex-col' id="leadership">
       <div className="flex flex-col justify-center ml-32 mr-32">
         <h2 className=' font-sans font-semibold text-7xl text-white ml-6 mt-6'> Leadership </h2>
         {
