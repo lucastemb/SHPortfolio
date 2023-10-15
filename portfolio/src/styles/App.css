@@ -28,6 +28,14 @@
   color: #61dafb;
 }
 
+.custom-dot-list-class button {
+  background: white;
+}
+
+.react-multi-carousel-dot.react-multi-carousel-dot--active button{
+  background: #61dafb !important;
+  }
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
