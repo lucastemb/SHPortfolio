@@ -18,7 +18,7 @@ function AboutMe() {
           <div className="h-56 z-0 absolute overflow-hidden border-4 border-white top-6 left-4 -right-5 inset-x-0 bg-contactus">
           </div>
         </div>
-        <div className="flex flex-col text-white font-sans font-semibold w-[90%] md:w-[35%] lg:w-[35%] mr-5 mt-5 lg:mt-0 md:mt-0">
+        <div className="flex flex-col text-white font-sans font-semibold w-[90%] md:w-[35%] lg:w-[35%] mr-5 mt-5 lg:mt-0 md:mt-0 ml-8 lg:ml-0 md:ml-0">
           <h2 className="text-4xl md:text-7xl lg:text-7xl text-textColor"> About Me </h2>
           <p className="font-normal text-sm md:text-base lg:text-base text-textColor"> {aboutme['description']}</p>
           <div className="mt-8 flex flex-row items-center">
