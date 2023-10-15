@@ -6,7 +6,7 @@ function AboutMe() {
   const profilePhoto = aboutme.profilePic
 
   return (
-    <div className="flex flex-col bg-aboutme w-full lg:h-screen md:h-screen pb-5">
+    <div className="flex flex-col bg-aboutme w-full lg:h-screen md:h-screen pb-16 md:pb-5 lg:pb-5">
       <Navbar />
 
       {/* Info Section */}

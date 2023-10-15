@@ -7,16 +7,12 @@ function Contact() {
     navigator.clipboard.writeText(contact.number);
   }
 
-  function copyEmail() {
-    navigator.clipboard.writeText(contact.email);
-  }
-
   function copyLinkedIn() {
     window.open(contact.linkedin);
   }
 
   return (
-    <div className='bg-contactus flex flex-col pb-4' id="contact">
+    <div className='bg-contactus flex flex-col pt-4 pb-8 md:pb-4 lg:pb-4' id="contact">
       <div className="flex flex-col md:ml-32 md:mr-32 lg:ml-32 lg:mr-32">
         <h2 className=' font-sans font-semibold text-3xl lg:text-7xl md:text-7xl text-white ml-6 mt-6'> Contact Me </h2>
         <div className="flex flex-col items-center justify-center m-12">
@@ -26,7 +22,7 @@ function Contact() {
             </svg>
             <p className="font-sans font-semibold lg:text-3xl md:text-3xl text-white cursor-pointer" onClick={() => copyNumber()}> {contact.number} </p>
           </span>
-          <span className="flex flex-row items-center"><svg className="fill-white mr-2 " width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M24 21h-24v-18h24v18zm-23-16.477v15.477h22v-15.477l-10.999 10-11.001-10zm21.089-.523h-20.176l10.088 9.171 10.088-9.171z" /></svg>  <p className="font-sans font-semibold md:text-3xl lg:text-3xl text-white cursor-pointer" onClick={() => copyEmail()}> {contact.email} </p> </span>
+          <span className="flex flex-row items-center"><svg className="fill-white mr-2 " width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M24 21h-24v-18h24v18zm-23-16.477v15.477h22v-15.477l-10.999 10-11.001-10zm21.089-.523h-20.176l10.088 9.171 10.088-9.171z" /></svg>  <p className="font-sans font-semibold md:text-3xl lg:text-3xl text-white cursor-pointer"> <a href={`mailto:${contact.email}`}> {contact.email} </a> </p> </span>
           <span className="flex flex-row items-center"> <svg className="fill-white mr-2 " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" /></svg> <p className="font-sans font-semibold md:text-3xl lg:text-3xl text-white cursor-pointer" onClick={() => copyLinkedIn()}> {contact.linkedin} </p>  </span>
         </div>
       </div>

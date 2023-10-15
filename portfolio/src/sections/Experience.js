@@ -8,7 +8,7 @@ function Experience() {
   return (
     <div className='bg-experience flex flex-col pb-4' id="experience" >
       <div className="flex flex-col justify-center ml-12 mr-12 md:ml-32 md:mr-32 lg:ml-32 lg:mr-32">
-        <h2 className=' font-sans font-semibold text-3xl lg:text-7xl md:text-7xl text-white ml-6 mt-8'> Experience </h2>
+        <h2 className=' font-sans font-semibold text-3xl lg:text-7xl md:text-7xl text-white md:ml-6 lg:ml-6 mt-8'> Experience </h2>
         {
           experiences.map(experience => {
             return (<Tile key={experience.id} company={experience.company} role={experience.role} dates={experience.dates} img={experience.img} desc={experience.desc} />)

@@ -25,9 +25,9 @@ function Projects() {
     }
   };
   return (
-    <div className='bg-[#001f5b] flex flex-col pb-4 h-full' id="projects"> 
+    <div className='bg-[#001f5b] flex flex-col pt-3 pb-8 lg:pb-4 md:pb-4 h-full' id="projects"> 
     <div className="flex flex-col ml-8 mr-8 md:ml-32 lg:mr-32">
-    <h2 className=' font-sans font-semibold text-3xl lg:text-7xl md:text-7xl text-white ml-6 mt-6'> Projects </h2>
+    <h2 className=' font-sans font-semibold text-3xl lg:text-7xl md:text-7xl text-white md:ml-6 lg:ml-6 mt-6 mb-6'> Projects </h2>
     <div className="flex flex-col justify-center items-center"> 
     <div className="w-full md:w-3/6 lg:w-3/6 justify-center items-center rounded mt-3"> 
     <Carousel responsive={responsive} arrows={false} infinite={true} swipable={true} showDots={true} dotListClass='custom-dot-list-class'> 
