@@ -1,70 +1,63 @@
-# Getting Started with Create React App
+# Getting Started with your SHPortfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Hi there! Welcome to SHPE UF's first SHPortfolio event. To get started please do the following:
 
-## Available Scripts
+1. Follow the instructions [here](https://code.visualstudio.com/download) to download VSCode. VSCode is the text editor we will be coding on!
+2. Create a Github account if you do not have one [here](https://github.com/join)!
+3. Download Git to your computer from [here](https://docs.github.com/en/get-started/quickstart/set-up-git#setting-up-git) and set your username & email in the terminal like so:
+4. Download [Node](https://nodejs.org/en/download). This tool will allow us to download online resources that our website can use.
+5. Download the zip file of this repository and unzip it.
+6. Open VSCode and open this repository folder.
 
-In the project directory, you can run:
+## Setup Scripts
+
+With our tools installed (Node, Git, and VSCode), we can now run our program! Open the terminal and write the following two commands:
+
+### `npm install`
+
+This command installs all supporting packages that our repository needs to use to operate.
 
 ### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+This command runs the app in the development mode. You can open[http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The page will reload as you make changes.
 
-### `npm test`
+## Personalize your portfolio
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+To understand the files you need to change, you need to understand the structure of our website:
 
-### `npm run build`
+### Sections
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Our website is split into 4 sections: About me, Experience, Leadership, and Contact.
+The code for each section is located in our `src/sections` folder.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+For the sake of our 1st workshop, you do not need to make changes to these files.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Assets
 
-### `npm run eject`
+Assets are all types of media that our website uses. This can range from images to videos to resume pdfs.
+You can access the assets folder in `public/assets`.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+For your website you need to add the following media files:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. For each experience and leadership position you wish to display, add the company/group's image/logo to `public/assets/experiences`.
+2. For each Project you wish to display, add a descriptive logo/image to `public/assets/projects`.
+3. Add your resume and profile image to `public/assets`.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### JSON Data
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+To further structure our information, we have shifted all of our data to exist in JSON files within `src/json-data`.
+JSON stands for JavaScript Object Notation and is a text-based way to present data, that is simple to parse for both humans and machines.
 
-## Learn More
+We have divided each section into their own respective JSON files. Upon making changes in your json files, you should see updates in your website. Please follow the format of the current images and replace the final parts with yours. For example:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+If your profile image is called `John.png`, replace `assets/tito.jpg` with `assets/John.png`. Capitalization matters!
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+To update your information, do the following:
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. Update the `aboutme.json` in `src/json-data` to update your about me section with your name, description, image, and more.
+2. Update the `experience.json` in `src/json-data` to update your experiences section with their respective description and images.
+3. Update the `leadership.json` in `src/json-data` to update your leadership experience section with their respective description and images.
+4. Update the `projects.json` in `src/json-data` to update your projects section with their respective description and images.
+5. Update the `contact.json` in `src/json-data` to update your contact section with your number, email, and linkedin.
