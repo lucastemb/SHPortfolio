@@ -63,3 +63,51 @@ To update your information, do the following:
 3. Update the `leadership.json` in `src/json-data` to update your leadership experience section with their respective description and images.
 4. Update the `projects.json` in `src/json-data` to update your projects section with their respective description and images.
 5. Update the `contact.json` in `src/json-data` to update your contact section with your number, email, and linkedin.
+
+## Finale
+
+Once you have updated your information, we can push our code to a github repo and deploy it on Github Pages!
+
+### Setting up your Github Repository
+
+Follow these steps to create a new repository:
+
+1. Go to your Github page
+2. Click "+" -> "New Repository"
+3. Title your repository name what you'd like you'd like it to be called. Ex: "your username" or "portfolio"
+4. Make sure the repository is public
+5. Click "Create Repository" at the bottom!
+
+### Back in VSCode, perform the following actions
+
+- In your terminal, run: `npm install gh-pages --save-dev`
+- Inside your `package.json`, add this to the top with your username and repo name:\
+  `"homepage": "https://{username}.github.io/{repo-name}"`\
+  Ex: `"homepage": "https://yairtemkin.github.io/shportfolio"`
+- Inside your `package.json`, inside `"scripts"` add these two lines:\
+  `"predeploy": "npm run build",`\
+  `"deploy": "gh-pages -d build"`
+
+### Connect your code to your github repository
+
+Run the following commands in your terminal:
+
+- `git init`
+- `git add .`
+- `git commit -m "Commit with my updated information"`
+- `git branch -M main`
+- `git remote add origin <link-to-your-repository>`
+- `git push -u origin main`
+- `npm run deploy`
+
+### Finally
+
+1. Go to your Github Repository
+2. Click Settings
+3. Go to "Code and Automation" -> "Pages"
+4. Configure the "Build and deployment" setting to have:
+5. Source: `Deploy from a Branch`
+6. Branch: `gh-pages`, Folder: `/ (root)`
+7. Click "save"!
+
+## Your Page should now be live!!
