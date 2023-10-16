@@ -5,11 +5,11 @@ Hi there! Welcome to SHPE UF's first SHPortfolio event. To get started please do
 1. Follow the instructions [here](https://code.visualstudio.com/download) to download VSCode. VSCode is the text editor we will be coding on!
 2. Create a Github account if you do not have one [here](https://github.com/join)!
 3. Download Git to your computer from [here](https://docs.github.com/en/get-started/quickstart/set-up-git#setting-up-git) and set your username & email in the terminal like so:
-<img width="666" alt="github-setup" src="https://github.com/lucastemb/SHPortfolio/assets/72417965/d5bc9c23-0f54-488d-8d55-609c618c8652">
+   <img width="666" alt="github-setup" src="https://github.com/lucastemb/SHPortfolio/assets/72417965/d5bc9c23-0f54-488d-8d55-609c618c8652">
 
-5. Download [Node](https://nodejs.org/en/download). This tool will allow us to download online resources that our website can use.
-6. Download the zip file of this repository and unzip it.
-7. Open VSCode and open this repository folder.
+4. Download [Node](https://nodejs.org/en/download). This tool will allow us to download online resources that our website can use.
+5. Download the zip file of this repository and unzip it.
+6. Open VSCode and open this repository folder.
 
 ## Setup Scripts
 
@@ -63,6 +63,10 @@ To update your information, do the following:
 3. Update the `leadership.json` in `src/json-data` to update your leadership experience section with their respective description and images.
 4. Update the `projects.json` in `src/json-data` to update your projects section with their respective description and images.
 5. Update the `contact.json` in `src/json-data` to update your contact section with your number, email, and linkedin.
+
+### Colors
+
+If you would like to change your portfolio's colors, check out `tailwind.config.js` and you may use this website to find new colors! `https://htmlcolorcodes.com`
 
 ## Finale
 
