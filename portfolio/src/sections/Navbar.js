@@ -13,7 +13,7 @@ function Navbar() {
                 <Link to="leadership" smooth="true"><a className="font-sans m-6 cursor-pointer">Leadership</a></Link>
                 <Link to="projects" smooth="true"><a className="font-sans m-6 cursor-pointer">Projects</a></Link>
                 <Link to="contact" smooth="true"><a className="font-sans m-6 cursor-pointer">Contact</a></Link>
-                <a href="/assets/Resume.pdf" download="Résumé" target="_blank" rel="noreferrer"><button className="font-sans m-6 text-[#FFF] bg-[#001F5B] rounded-lg w-40 h-8">  Download Resume </button> </a>
+                <a href={aboutme.resumeLocation} download={aboutme.ResumeName} target="_blank" rel="noreferrer"><button className="font-sans m-6 text-white bg-textColor rounded-lg w-40 h-8">  Download Resume </button> </a>
             </div>
         </nav>
     )
