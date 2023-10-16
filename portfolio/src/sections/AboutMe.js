@@ -13,7 +13,7 @@ function AboutMe() {
       <div className="flex flex-col md:flex-row lg:flex-row justify-center h-full items-center">
         <div className="relative ml-5 flex md:hidden lg:hidden m-8">
           <div className="h-56 z-10 relative overflow-hidden border-4 border-white top-0 left-0">
-            <img src={profilePhoto} className=" w-full h-full"></img>
+            <img src={profilePhoto} className="h-full"></img>
           </div>
           <div className="h-56 z-0 absolute overflow-hidden border-4 border-white top-6 left-4 -right-5 inset-x-0 bg-contactus">
           </div>
